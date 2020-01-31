@@ -1,0 +1,27 @@
+SData=[]
+while True:
+    print ('''
+             1.Push
+             2.pop
+             3.Display
+             4.Exit''')
+    opt=input("Enter")
+    if opt>3 or opt<1:
+        continue
+    if opt==1:
+        X=input("Enter")
+        SData.append(X)
+    if opt==2:
+        if SData==[]:
+            print("No item to be deleted")
+        else:
+            SData.pop()
+            print ("popped the item at position",len(SData))
+    if opt==3:
+        if SData==[]:
+            print ("Empty")
+        else:
+            for i in range(-len(SData),-1):
+                print (SData[i],)
+    if opt==4:
+       break

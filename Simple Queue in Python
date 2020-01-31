@@ -1,0 +1,28 @@
+Queue=[]
+while True:
+    print ("""
+             1.Push
+             2.pop
+             3.Display
+             4.Exit """)
+    opt=int(input("Enter"))
+    if opt>3 or opt<1:
+        continue
+    if opt==1:
+        X=int(input("Enter"))
+        Queue.append(X)
+    if opt==2:
+        if Queue==[]:
+            print("No item to be deleted")
+        else:
+           B=(-len(Queue))
+           Queue.pop(0)
+           print ("popped the item at position",B)
+    if opt==3:
+        if Queue==[]:
+            print ("Empty")
+        else:
+            for i in range(0,len(Queue)):
+                print (Queue[i],)
+    if opt==4:
+       break
